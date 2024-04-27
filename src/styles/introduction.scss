@@ -9,3 +9,11 @@
   width: 400px;
   text-align: center;
 }
+
+@media screen and (max-width: 500px) {
+  .privacy {
+    gap: 1rem;
+    width: 300px;
+    text-align: center;
+  }
+}
