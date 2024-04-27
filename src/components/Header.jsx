@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/header.scss";
 
 const Header = () => {
   return (
-    <nav>
-      <ul>
+    <nav className="flex">
+      <ul className="flex">
         <li>
           <Link to="/">Home</Link>
         </li>

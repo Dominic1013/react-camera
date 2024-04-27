@@ -4,3 +4,53 @@
   margin: 0;
   text-decoration: none;
 }
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-primary {
+  width: 100px;
+  height: fit-content;
+  background: transparent;
+  border: 1px solid green;
+  padding: 10px 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+.button-primary:hover {
+  background: green;
+  color: white;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  line-height: normal;
+
+  cursor: pointer;
+
+  box-shadow: none;
+
+  transition: background-color 0.3s, color 0.3s;
+}

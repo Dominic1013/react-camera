@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Introduction from "./pages/Introduction";
 
 import CameraPage from "./pages/CameraPage";
-import Header from "./pages/components/Header";
+import Header from "./components/Header";
 
 function App() {
   return (

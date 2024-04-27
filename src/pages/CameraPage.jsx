@@ -101,7 +101,7 @@ const CameraPage = () => {
       </section>
       <section className="cameraSection">
         {image ? (
-          <div className="cameraSection--imageArea">
+          <div className="cameraSection--imageArea flex">
             <img
               className="imageArea--image"
               src={image}
@@ -124,7 +124,7 @@ const CameraPage = () => {
         )}
       </section>
       {!aiData && image ? (
-        <div>
+        <div className="imageButtons flex">
           <label htmlFor="cameraCta" className="button-primary">
             再次拍攝
           </label>
@@ -135,21 +135,25 @@ const CameraPage = () => {
             accept="image/*"
             onChange={handleFilesChange}
           />
-          <button onClick={handleSubmit}>確定送出</button>
+          <button className="button-primary" onClick={handleSubmit}>
+            確定送出
+          </button>
         </div>
       ) : (
         ""
       )}
 
       {aiData && imageStorage && image ? (
-        <button onClick={handleRestart}>重新開始</button>
+        <button className="button-primary" onClick={handleRestart}>
+          重新開始
+        </button>
       ) : (
         ""
       )}
 
       {/* AI 文本生成區 */}
       {aiData ? (
-        <section className="aiSection">
+        <section className="aiSection flex-col">
           <h1>Ai 文本生成區</h1>
           <h2>{aiData.title}</h2>
           <p>{aiData.desc}</p>
@@ -157,7 +161,9 @@ const CameraPage = () => {
           {/* 我假設 ai 會生成 html格式 */}
         </section>
       ) : (
-        <h1>Ai 文本生成區</h1>
+        <div className="aiSection">
+          <h1>Ai 文本生成區</h1>
+        </div>
       )}
     </div>
   );
