@@ -1,0 +1,56 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .cameraSection {
+    border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .cameraSection--ctaArea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .cameraSection--imageArea {
+      width: 100%;
+      .imageArea--image {
+        width: 50%;
+      }
+    }
+  }
+}
+
+section {
+  margin: 5rem;
+}
+
+.button-primary {
+  width: 100px;
+  height: fit-content;
+  background: transparent;
+  border: 1px solid green;
+  padding: 10px 8px;
+  cursor: pointer;
+
+  &:hover {
+    background: green;
+    color: white;
+  }
+}
+
+#cameraCta {
+  visibility: hidden;
+}
+#cameraCta2 {
+  visibility: hidden;
+}
